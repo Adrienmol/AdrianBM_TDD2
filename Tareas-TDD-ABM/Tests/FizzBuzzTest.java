@@ -113,7 +113,7 @@ class FizzBuzzTest {
         FizzBuzz prueba = new FizzBuzz();
         String FizzBuzz = prueba.imprimirResultado(14);
         assertEquals("14", FizzBuzz);
-        System.out.println("Resultado:" + " " + FizzBuzz );
+        System.out.println("Resultado:" + " " + FizzBuzz);
     }
 
     @Test
@@ -121,7 +121,7 @@ class FizzBuzzTest {
         FizzBuzz prueba = new FizzBuzz();
         String FizzBuzz = prueba.imprimirResultado(15);
         assertEquals("FizzBuzz", FizzBuzz);
-        System.out.println("Resultado:" + " " + FizzBuzz );
+        System.out.println("Resultado:" + " " + FizzBuzz);
     }
 
 }
