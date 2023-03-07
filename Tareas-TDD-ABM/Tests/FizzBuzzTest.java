@@ -84,4 +84,44 @@ class FizzBuzzTest {
         System.out.println("Resultado:" + " " + FizzBuzz );
     }
 
+    @Test
+    void testAlPasarle11Devuelve11() {
+        FizzBuzz prueba = new FizzBuzz();
+        String FizzBuzz = prueba.imprimirResultado(11);
+        assertEquals("11", FizzBuzz);
+        System.out.println("Resultado:" + " " + FizzBuzz );
+    }
+
+    @Test
+    void testAlPasarle12DevuelveFizz() {
+        FizzBuzz prueba = new FizzBuzz();
+        String FizzBuzz = prueba.imprimirResultado(12);
+        assertEquals("Fizz", FizzBuzz);
+        System.out.println("Resultado:" + " " + FizzBuzz );
+    }
+
+    @Test
+    void testAlPasarle13Devuelve13() {
+        FizzBuzz prueba = new FizzBuzz();
+        String FizzBuzz = prueba.imprimirResultado(13);
+        assertEquals("13", FizzBuzz);
+        System.out.println("Resultado:" + " " + FizzBuzz );
+    }
+
+    @Test
+    void testAlPasarle14Devuelve14() {
+        FizzBuzz prueba = new FizzBuzz();
+        String FizzBuzz = prueba.imprimirResultado(14);
+        assertEquals("14", FizzBuzz);
+        System.out.println("Resultado:" + " " + FizzBuzz );
+    }
+
+    @Test
+    void testAlPasarle15DevuelveFizzBuzz() {
+        FizzBuzz prueba = new FizzBuzz();
+        String FizzBuzz = prueba.imprimirResultado(15);
+        assertEquals("FizzBuzz", FizzBuzz);
+        System.out.println("Resultado:" + " " + FizzBuzz );
+    }
+
 }
