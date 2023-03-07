@@ -25,5 +25,25 @@ class TestCalculadora {
         System.out.println(resultado);
     }
 
+    @Test
+    void testAlPoner1y2Devuelve3() {
+        //Arrange
+        OpearcionesTDD calculadora = new OpearcionesTDD();
+        //Act
+        int resultado = calculadora.suma("1,2");
+        //Assert
+        assertEquals(3, resultado);
+        System.out.println(resultado);
+    }
 
+    @Test
+    void testAlPoner1y1y2Devuelve4() {
+        //Arrange
+        OpearcionesTDD calculadora = new OpearcionesTDD();
+        //Act
+        int resultado = calculadora.suma("1,1,2");
+        //Assert
+        assertEquals(4, resultado);
+        System.out.println(resultado);
+    }
 }
