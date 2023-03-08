@@ -69,5 +69,14 @@ class TestCalculadora {
         System.out.println(resultado);
     }
 
-
+    @Test
+    void testNumerosMayoresA1000SeIgnoran() {
+        //Arrange
+        OpearcionesTDD calculadora = new OpearcionesTDD();
+        //Act
+        int resultado = calculadora.suma("5,1002");
+        //Assert
+        assertEquals(5, resultado);
+        System.out.println(resultado);
+    }
 }

@@ -19,7 +19,12 @@ public class OpearcionesTDD {
                 System.out.println("Número negativo no permitido");
                 return -1;
             }
-            total += actual; //Aumento el valor de total para devolverlo después.
+            if (actual <= 1000) {
+                total += actual; //Aumento el valor de total para devolverlo después.
+            } else {
+                System.out.println("Numero superior a 1000 ignorado");
+                return total;
+            }
         }
         return total;
     }
