@@ -3,6 +3,13 @@ public class OpearcionesTDD {
         if (cadena.equals("")) {
             return 0;
         }
+        String acabaencoma="";
+        for (int i = 0; i <cadena.length() ; i++) { //
+            acabaencoma = cadena.substring(i);
+        }
+        if (acabaencoma.equals(",")) {
+            return -1;
+        }
         String numeros[] = cadena.split(","); //Método que separa los números de las comas.
         int total=0;
         int actual;

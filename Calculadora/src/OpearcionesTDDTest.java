@@ -46,4 +46,15 @@ class TestCalculadora {
         assertEquals(4, resultado);
         System.out.println(resultado);
     }
+
+    @Test
+    void testAlPasarComaDeMasDevuelveMenos1() {
+        //Arrange
+        OpearcionesTDD calculadora = new OpearcionesTDD();
+        //Act
+        int resultado = calculadora.suma("1,2,");
+        //Assert
+        assertEquals(-1, resultado);
+        System.out.println(resultado);
+    }
 }
