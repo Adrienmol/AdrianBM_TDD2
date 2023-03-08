@@ -57,4 +57,17 @@ class TestCalculadora {
         assertEquals(-1, resultado);
         System.out.println(resultado);
     }
+
+    @Test
+    void testAlPasarNegativoDevuelveMenos1YMensajeDeError() {
+        //Arrange
+        OpearcionesTDD calculadora = new OpearcionesTDD();
+        //Act
+        int resultado = calculadora.suma("1,2,-2");
+        //Assert
+        assertEquals(-1, resultado);
+        System.out.println(resultado);
+    }
+
+
 }

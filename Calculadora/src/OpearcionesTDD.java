@@ -15,6 +15,10 @@ public class OpearcionesTDD {
         int actual;
         for (int i = 0; i < numeros.length; i++) { //Recorro el array de nuestros números.
             actual = Integer.valueOf(numeros[i]); //Convierto el valor de cada posición del array a int.
+            if (actual < 0) {
+                System.out.println("Número negativo no permitido");
+                return -1;
+            }
             total += actual; //Aumento el valor de total para devolverlo después.
         }
         return total;
